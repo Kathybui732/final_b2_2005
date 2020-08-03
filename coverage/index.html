@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-03T10:56:45-06:00">2020-08-03T10:56:45-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-03T11:07:55-06:00">2020-08-03T11:07:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -315,7 +315,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c38d3eabb4970cfe415bd08113dfe8a3ae22048b" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -3546,35 +3546,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">  # get &quot;/passengers/:id&quot;, to: &#39;passengers#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  get &quot;/passengers/:id&quot;, to: &#39;passengers#show&#39;</code>
+            <code class="ruby">  resources :passengers, only: [:show]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  get &quot;/flights/:id&quot;, to: &#39;flights#show&#39;</code>
           </li>
         </div>
       
@@ -3585,7 +3585,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  # get &quot;/flights/:id&quot;, to: &#39;flights#show&#39;</code>
           </li>
         </div>
       
@@ -3596,12 +3596,34 @@
 
             
 
-            <code class="ruby">  post &quot;/passengers/:passenger_id/flight_passengers&quot;, to: &#39;flight_passengers#create&#39;</code>
+            <code class="ruby">  resources :flights, only: [:show]</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  post &quot;/passengers/:passenger_id/flight_passengers&quot;, to: &#39;flight_passengers#create&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
