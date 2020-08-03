@@ -1,1 +1,13 @@
-<%= @flight %>'s Show Page
+<%= @flight.number %>'s Show Page
+
+<%= @flight.number %>
+<%= @flight.date %>
+<%= @flight.time %>
+<%= @flight.departure_city %>
+<%= @flight.arrival_city %>
+
+<%= @flight.airline.name %>
+
+<% @flight.passengers.each do |p| %>
+<%= p.name %>
+<% end %>
