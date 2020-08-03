@@ -1,0 +1,5 @@
+<%= @passenger.name %>'s Show Page
+
+<% @passenger.flights.each do |flight| %>
+  <%= link_to flight.number, "/flights/#{flight.id}" %>
+<% end %>

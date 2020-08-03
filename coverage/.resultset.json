@@ -206,12 +206,30 @@
         "lines": [
           1,
           null,
+          1,
+          null,
+          1,
           null
         ]
       },
       "/Users/kathybui/turing/2-mod/mid_mod/final_b2_2005/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/kathybui/turing/2-mod/mid_mod/final_b2_2005/spec/models/arlines_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -311,8 +329,35 @@
           1,
           null
         ]
+      },
+      "/Users/kathybui/turing/2-mod/mid_mod/final_b2_2005/app/controllers/passengers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kathybui/turing/2-mod/mid_mod/final_b2_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kathybui/turing/2-mod/mid_mod/final_b2_2005/app/controllers/flights_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1596468315
+    "timestamp": 1596469722
   }
 }
