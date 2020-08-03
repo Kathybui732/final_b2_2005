@@ -1,13 +1,17 @@
 <%= @flight.number %>'s Show Page
 
-<%= @flight.number %>
-<%= @flight.date %>
-<%= @flight.time %>
-<%= @flight.departure_city %>
-<%= @flight.arrival_city %>
+Flight#: <%= @flight.number %>
+Flight Date: <%= @flight.date %>
+Flight Time: <%= @flight.time %>
+Departure City: <%= @flight.departure_city %>
+Arrival City: <%= @flight.arrival_city %>
 
-<%= @flight.airline.name %>
+Airline Name: <%= @flight.airline.name %>
 
+Passengers Flying on Flight#: <%= @flight.number %>
 <% @flight.passengers.each do |p| %>
-<%= p.name %>
+  <%= p.name %>
 <% end %>
+
+Number of Minors on Flight: <%= @flight.passengers.number_of_minors %>
+Number of Adults on Flight: <%= @flight.passengers.number_of_adults %>

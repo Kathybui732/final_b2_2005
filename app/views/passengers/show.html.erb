@@ -1,5 +1,14 @@
 <%= @passenger.name %>'s Show Page
 
+Passenger is flying on the following flights:
 <% @passenger.flights.each do |flight| %>
-  <%= link_to flight.number, "/flights/#{flight.id}" %>
+  Flight#: <%= link_to flight.number, "/flights/#{flight.id}" %>
+<% end %>
+
+Add flight to passenger
+<%= form_tag "/passengers/#{@passenger.id}/flight_passengers", method: :post do %>
+  <%= label_tag :flight_number %>
+  <%= text_field_tag :number %>
+
+  <%= submit_tag "Submit" %>
 <% end %>

@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get "/passengers/:id", to: 'passengers#show'
 
   get "/flights/:id", to: 'flights#show'
+
+  post "/passengers/:passenger_id/flight_passengers", to: 'flight_passengers#create'
 end
